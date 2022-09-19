@@ -6,7 +6,7 @@
 }
 
 html {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 /*
@@ -40,6 +40,11 @@ html {
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
   height: 46px;
   background-color: #000;
 }
@@ -120,12 +125,180 @@ html {
 }
 
 #slider {
-  min-height: 500px;
+  /* min-height: 1000px; */
   background-color: #333;
+  margin-top: 46px;
+  padding-top: 50%;
+  background: url(/assets/img/chicago.jpg) top center /cover no-repeat;
+  position: relative;
+}
+
+#slider .text-content {
+  color: #fff;
+  position: absolute;
+  bottom: 47px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.text-content > .text-heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.text-content > .text-description {
+  font-size: 15px;
+  margin-top: 24px;
 }
 
 #content {
 
+}
+
+#content .content-section {
+  padding: 64px 16px;
+}
+
+.content-section.bg-dark {
+  background-color: #000;
+}
+
+.content-section.bg-dark > .section-heading, 
+.content-section.bg-dark > .section-sub-heading {
+  color: #fff;
+}
+
+.content-section > .section-heading {
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.content-section > .section-sub-heading {
+  margin: 15px 0;
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.content-section > .about-text {
+  text-align: justify;
+  margin: 15px 15px;
+  font-size: 15px;
+} 
+
+.content-section > .about-member {
+  display: flex;
+  justify-content: center;
+}
+
+.about-member .member-detail {
+  min-height: 200px;
+  min-width: 196px;
+  text-align: center;
+  margin: 10px 10px;
+  position: relative;
+  /* display: inline-block; */
+}
+.member-detail .member-name {
+  margin: 15px 0;
+  font-size: 15px;
+}
+.member-detail .member-avatar {
+  width: 139px;
+  height: 139px;
+  background: url(/assets/img/bandmember.jpg) top center / cover no-repeat;
+  border-radius: 4px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ticket-list {
+  color: #fff;
+}
+
+.ticket-list li {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #ddd;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.ticket-list .ticket-tag {
+  background-color: red;
+  color: #fff;
+  padding: 0 8px;
+  margin-left: 16px;
+}
+
+.ticket-list .ticket-count {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  padding: 3px 3px;
+  margin-right: 3px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  text-align: center;
+}
+
+
+.ticket-content {
+  color: #000;
+  list-style-type: none;
+  padding: 32px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.ticket-content > li {
+  margin-left: 8px;
+  width: 100%;
+}
+
+.ticket-content > li:first-child {
+  margin-left: 0px;
+}
+
+.ticket-content .ticket-sub-content {
+  background-color:#fff;
+  padding: 15px 16px;
+  font-size: 15px;
+}
+
+.ticket-content .ticket-content-img {
+  width: 100%;
+  /* height: 150px; */
+  object-fit: cover;
+}
+
+.ticket-sub-content .ticket-sub-location {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.ticket-sub-content .ticket-sub-date {
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 15px;
+}
+
+.ticket-sub-content .ticket-sub-desc {
+  margin-bottom: 15px;
+}
+
+.ticket-sub-content .btn-buy {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
 }
 
 #footer {
