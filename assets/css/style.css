@@ -301,6 +301,12 @@ html {
   border-radius: 5px;
 }
 
+.ticket-sub-content .btn-buy:hover {
+  background-color: #ccc;
+  color: #000;
+  cursor: pointer;
+}
+
 #footer {
 
 }
