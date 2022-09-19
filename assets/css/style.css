@@ -22,8 +22,21 @@ html {
 4. Kieu dang(kieu chu, hinh tron, vuong)
 */
 
-#main {
+/*
+1. Tu ngoai vao trong
+2. Tu tren xuong duoi
+3. Tong quan den chi tiet
+*/
 
+/* 
+1. Vi tri
+2. Kich thuoc
+3. Mau sac
+4. Kieu dang(kieu chu, hinh tron, vuong)
+*/
+
+#main {
+  
 }
 
 #header {
@@ -31,29 +44,84 @@ html {
   background-color: #000;
 }
 
-#nav li {
+#nav {
   display: inline-block;
+}
+
+#nav, .subnav {
+  list-style-type: none;
+}
+
+#nav > li {
+  display: inline-block;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
 }
 
 #nav li a {
-  color: #fff;
   text-decoration: none;
   line-height: 46px;
   padding: 0 24px;
-  display: inline-block;
+  display: block;
 }
 
-#nav li:hover a {
+#nav li:hover .subnav {
+  display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a
+{
   color: #000;
   background-color: #ccc;
 }
 
 #nav .subnav {
   display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a {
+  color: #000;
+  padding: 0 12px;
+  line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+  font-size: 12px;
+}
+
+#header .search-btn {
+  float: right;
+  padding: 0 21px;
+}
+
+#header .search-btn:hover {
+  background-color: #f44436;
+  cursor: pointer;
+}
+
+.search-btn .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
 }
 
 #slider {
-
+  min-height: 500px;
+  background-color: #333;
 }
 
 #content {
