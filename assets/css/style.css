@@ -1,25 +1,65 @@
-:root {
-  --primary-color: green;
+/* Rest CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*The CSS box-sizing property allows us to include the padding and border in an element's total width and height.*/
 }
 
 html {
-  font-size: 50px;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-.container {
-  /* background-color: blueviolet; */
-  width: 100px;
-  height: 100px;
-  background: url(https://kynguyenlamdep.com/wp-content/uploads/2022/06/anh-gai-xinh-cuc-dep.jpg) no-repeat center / cover border-box;
-  border: 1px solid rgba(65, 65, 218, 0.589);
-  border-radius: 20%;
-  padding: 10px;
-  /* display: flex; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* width: fit-content; */
+/*
+1. Tu ngoai vao trong
+2. Tu tren xuong duoi
+3. Tong quan den chi tiet
+*/
+
+/* 
+1. Vi tri
+2. Kich thuoc
+3. Mau sac
+4. Kieu dang(kieu chu, hinh tron, vuong)
+*/
+
+#main {
+
 }
 
-h1 {
-  font-size: 2rem;
+#header {
+  height: 46px;
+  background-color: #000;
+}
+
+#nav li {
+  display: inline-block;
+}
+
+#nav li a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 46px;
+  padding: 0 24px;
+  display: inline-block;
+}
+
+#nav li:hover a {
+  color: #000;
+  background-color: #ccc;
+}
+
+#nav .subnav {
+  display: none;
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
 }
