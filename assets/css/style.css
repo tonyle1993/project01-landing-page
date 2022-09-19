@@ -1,0 +1,25 @@
+:root {
+  --primary-color: green;
+}
+
+html {
+  font-size: 50px;
+}
+
+.container {
+  /* background-color: blueviolet; */
+  width: 100px;
+  height: 100px;
+  background: url(https://kynguyenlamdep.com/wp-content/uploads/2022/06/anh-gai-xinh-cuc-dep.jpg) no-repeat center / cover border-box;
+  border: 1px solid rgba(65, 65, 218, 0.589);
+  border-radius: 20%;
+  padding: 10px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* width: fit-content; */
+}
+
+h1 {
+  font-size: 2rem;
+}
