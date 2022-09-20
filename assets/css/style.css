@@ -129,7 +129,7 @@ html {
   background-color: #333;
   margin-top: 46px;
   padding-top: 50%;
-  background: url(/assets/img/chicago.jpg) top center /cover no-repeat;
+  background: url(/project01-landing-page/assets/img/chicago.jpg) top center /cover no-repeat;
   position: relative;
 }
 
@@ -219,7 +219,7 @@ html {
 .member-detail .member-avatar {
   width: 139px;
   height: 139px;
-  background: url(/assets/img/bandmember.jpg) top center / cover no-repeat;
+  background: url(/project01-landing-page/assets/img/bandmember.jpg) top center / cover no-repeat;
   border-radius: 4px;
   position: absolute;
   left: 50%;
@@ -365,11 +365,7 @@ html {
 #map {
   width: 100%;
   padding-top: 50%;
-  background: url(/assets/img/map.jpg) top center / cover no-repeat;
-}
-
-#footer {
-
+  background: url(/project01-landing-page/assets/img/map.jpg) top center / cover no-repeat;
 }
 
 #footer .section-container {
