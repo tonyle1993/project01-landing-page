@@ -153,14 +153,18 @@ html {
 }
 
 #content {
-
 }
 
+#footer .content-section,
 #content .content-section {
   padding: 64px 16px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.content-section.bg-dark {
+.bg-dark {
   background-color: #000;
 }
 
@@ -183,15 +187,21 @@ html {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.content-section > .about-text {
+.section-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.section-container > .about-text {
   text-align: justify;
   margin: 15px 15px;
   font-size: 15px;
 } 
 
-.content-section > .about-member {
+.section-container > .about-member {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .about-member .member-detail {
@@ -218,6 +228,7 @@ html {
 
 .ticket-list {
   color: #fff;
+  list-style-type: none;
 }
 
 .ticket-list li {
@@ -249,7 +260,6 @@ html {
   border-radius: 50%;
   text-align: center;
 }
-
 
 .ticket-content {
   color: #000;
@@ -307,6 +317,63 @@ html {
   cursor: pointer;
 }
 
+.section-container.section-col {
+  display: flex;
+  padding: 32px 0px 0px;
+}
+
+.section-col > div {
+  width: 50%;
+}
+
+.contact-info > p {
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.contact-info > p > i {
+  margin-right: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.contact-form  input {
+  width: 100%;
+  padding: 8px 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-form .btn-send {
+  float: right;
+  padding: 8px 16px;
+  margin: 16px 0;
+  color: #fff;
+  background-color: #000;
+}
+
+.row-2 {
+  display: flex;
+  margin-bottom: 16px;  
+}
+
+.row-2 input:not(:last-child) {
+  margin-right: 16px;
+}
+
+#map {
+  width: 100%;
+  padding-top: 50%;
+  background: url(/assets/img/map.jpg) top center / cover no-repeat;
+}
+
 #footer {
 
+}
+
+#footer .section-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
