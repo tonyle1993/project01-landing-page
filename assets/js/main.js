@@ -9,7 +9,7 @@ const buyBtns = $$('.js-buy-btn');
 const menu = $('.js-menu');
 const menuBtn = $('.js-menu-btn');
 const menuHeight = menu.clientHeight;
-const menuItems = $$('.js-menu a');
+const menuItems = $$('.js-menu li a[href*="#"]');
 
 //modal
 function openModal() {
@@ -47,5 +47,14 @@ menuBtn.addEventListener('click', () => {
 });
 
 for (const menuItem of menuItems) {
-  menuItem.addEventListener('click', closeMenu)
+  const subMenu = menuItem.parentElement.querySelector('.subnav');
+  if(!subMenu)
+  {
+    menuItem.addEventListener('click', closeMenu);
+  }
+  else {
+    menuItem.addEventListener('click', (event) => {
+      event.preventDefault();
+    });
+  }
 }

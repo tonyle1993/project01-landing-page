@@ -45,16 +45,44 @@
     position: relative;
   }
 
+  #nav .subnav {
+    position: initial;
+    background-color: #ddd;
+    box-shadow: none;
+  }
+
+  #nav .subnav > li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding-right: 16px;
+  }
+
+
   #nav > li:first-child {
     /* display: inline-block; */
     background-color: #009688;
   }
 
-  #nav li:not(:last-child, :first-child) {
+  #nav > li:not(:last-child, :first-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  #content .member-list {
-    display: none;
+  #content .member-item {
+    width: 100%;
+  }
+
+  #content .member-avatar {
+    width: 229px;
+    height: 229px;
+  }
+
+  #content .place-item {
+    width: 100%;
+    margin: 8px 0px;
+  }
+
+  #content .contact-item {
+    width: 100%;
+    margin: 8px 0px;
   }
 }
