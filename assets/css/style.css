@@ -161,6 +161,10 @@ html {
   padding: 0 21px;
 }
 
+#header .menu-btn {
+  display: none;
+}
+
 #header .search-btn:hover {
   background-color: #f44436;
   cursor: pointer;
@@ -389,7 +393,7 @@ html {
 .modal-container {
   width: 900px;
   height: 472px;
-  max-width: 100%;
+  max-width: calc(100% - 32px);
   background-color: #fff;
   animation: modalFadeIn ease .5s;
 }

@@ -1,9 +1,38 @@
 /* IPAD */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
-  
 }
 
 /* MOBILE */
 @media only screen and (max-width: 739px) {
   /* overflow: hidden; */
+  #header {
+    overflow: hidden;
+  }
+
+  #header .search-btn {
+    display: none;
+  }
+
+  #nav > li {
+    display: block;
+  }
+
+  #header .menu-btn {
+    float: right;
+    padding: 0 21px;
+    text-align: center;
+    display: block;
+  }
+  
+  #header .menu-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+  }
+
+  #header .menu-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+  }
 }
