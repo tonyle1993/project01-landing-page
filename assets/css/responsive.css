@@ -1,0 +1,88 @@
+/* IPAD */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* MOBILE */
+@media only screen and (max-width: 739px) {
+  /* overflow: hidden; */
+  #header {
+    overflow: hidden;
+    position: fixed;
+  }
+
+  #header .search-btn {
+    display: none;
+  }
+
+  #nav > li {
+    display: block;
+  }
+
+  #header .menu-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 21px;
+    text-align: center;
+    display: block;
+
+  }
+  
+  #header .menu-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+  }
+
+  #header .menu-icon {
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+  }
+
+  #nav, .subnav {
+    display: block;
+    position: relative;
+  }
+
+  #nav .subnav {
+    position: initial;
+    background-color: #ddd;
+    box-shadow: none;
+  }
+
+  #nav .subnav > li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding-right: 16px;
+  }
+
+
+  #nav > li:first-child {
+    /* display: inline-block; */
+    background-color: #009688;
+  }
+
+  #nav > li:not(:last-child, :first-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  #content .member-item {
+    width: 100%;
+  }
+
+  #content .member-avatar {
+    width: 229px;
+    height: 229px;
+  }
+
+  #content .place-item {
+    width: 100%;
+    margin: 8px 0px;
+  }
+
+  #content .contact-item {
+    width: 100%;
+    margin: 8px 0px;
+  }
+}

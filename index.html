@@ -7,18 +7,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>F8 Shop</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
   <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 </head>
 
 <body>
   <div id="main">
-    <div id="header">
+    <div id="header" class="js-menu">
       <!-- Begin Navigation -->
       <ul id="nav">
         <li><a href="#">Home</a></li>
-        <li><a href="#header-band">Band</a></li>
-        <li><a href="#header-tour">Tour</a></li>
-        <li><a href="#header-contact">Contact</a></li>
+        <li><a href="#band">Band</a></li>
+        <li><a href="#tour">Tour</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li>
           <a href="#">
             More
@@ -35,19 +36,21 @@
       <div class="search-btn">
         <i class="search-icon ti-search"></i>
       </div>
+      <div class="menu-btn js-menu-btn">
+        <i class="menu-icon ti-menu"></i>
+      </div>
     </div>
     <div id="slider">
       <div class="text-content">
-        <h2 class="text-heading">New York</h2>
-        <p class="text-description">We had the best time playing at Venice Beach!
-        </p>
+        <h2 class="text-heading">Chicago</h2>
+        <p class="text-description">Thank you, Chicago - A night we won't forget.</p>
       </div>
     </div>
     <div id="content">
-      <div id="header-band" class="content-section">
-        <h2 class="section-heading">THE BAND</h2>
-        <p class="section-sub-heading">We love music</p>
+      <div id="band" class="section">
         <div class="section-container">
+          <h2 class="section-heading">THE BAND</h2>
+          <p class="section-sub-heading">We love music</p>
           <p class="about-text">
             We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -58,97 +61,107 @@
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
             laboris nisi ut aliquip ex ea commodo consequat.
           </p>
-          <div class="about-member">
-            <div class="member-detail">
+          <div class="row member-list">
+            <div class="member-item col col-3">
               <p class="member-name">Name</p>
               <div class="member-avatar"></div>
             </div>
-            <div class="member-detail">
+            <div class="member-item col col-3">
               <p class="member-name">Name</p>
               <div class="member-avatar"></div>
             </div>
-            <div class="member-detail">
+            <div class="member-item col col-3">
               <p class="member-name">Name</p>
               <div class="member-avatar"></div>
             </div>
           </div>
         </div>
       </div>
-      <div id="header-tour" class="content-section bg-dark">
-        <h2 class="section-heading">TOUR DATES</h2>
-        <p class="section-sub-heading">Remember to book your tickets!</p>
+      <div id="tour" class="section bg-dark">
         <div class="section-container">
+          <h2 class="section-heading text-white">TOUR DATES</h2>
+          <p class="section-sub-heading text-white">Remember to book your tickets!</p>
           <ul class="ticket-list">
-            <li>
+            <li class="ticket-item">
               September
               <span class="ticket-tag">Sold out</span>
             </li>
-            <li>
+            <li class="ticket-item">
               October
               <span class="ticket-tag">Sold out</span>
             </li>
-            <li>
+            <li class="ticket-item">
               November
               <span class="ticket-count">3</span>
             </li>
           </ul>
-          <ul class="ticket-content">
-            <li>
-              <img class="ticket-content-img" src="./assets/img/newyork.jpg" alt=""></img>
-              <div class="ticket-sub-content">
-                <p class="ticket-sub-location">New York</p>
-                <p class="ticket-sub-date">Fri 27 Nov 2016</p>
-                <p class="ticket-sub-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <span class="btn-buy">Buy Tickets</span>
+          <div class="row place-list">
+            <div class="place-item col col-3">
+              <img class="place-img" src="./assets/img/newyork.jpg" alt=""></img>
+              <div class="place-container">
+                <h3 class="place-location">New York</h3>
+                <p class="place-date">Fri 27 Nov 2016</p>
+                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="btn js-buy-btn">Buy Tickets</button>
               </div>
-            </li>
-            <li>
-              <img class="ticket-content-img" src="./assets/img/paris.jpg" alt=""></img>
-              <div class="ticket-sub-content">
-                <p class="ticket-sub-location">Paris</p>
-                <p class="ticket-sub-date">Sat 28 Nov 2016</p>
-                <p class="ticket-sub-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                <span class="btn-buy">Buy Tickets</span>
+            </div>
+            <div class="place-item col col-3">
+              <img class="place-img" src="./assets/img/paris.jpg" alt=""></img>
+              <div class="place-container">
+                <h3 class="place-location">Paris</h3>
+                <p class="place-date">Sat 28 Nov 2016</p>
+                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                <button class="btn js-buy-btn">Buy Tickets</button>
               </div>
-            </li>
-            <li>
-              <img class="ticket-content-img" src="./assets/img/sanfran.jpg" alt=""></img>
-              <div class="ticket-sub-content">
-                <p class="ticket-sub-location">San Francisco</p>
-                <p class="ticket-sub-date">Sun 29 Nov 2016</p>
-                <p class="ticket-sub-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                <span class="btn-buy" onclick="alert('Buy ticket')">Buy Tickets</span>
+            </div>
+            <div class="place-item col col-3">
+              <img class="place-img" src="./assets/img/sanfran.jpg" alt=""></img>
+              <div class="place-container">
+                <h3 class="place-location">San Francisco</h3>
+                <p class="place-date">Sun 29 Nov 2016</p>
+                <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                <button class="btn js-buy-btn">Buy Tickets</button>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
 
       </div>
-      <div id="header-contact" class="content-section">
-        <h2 class="section-heading">CONTACT</h2>
-        <p class="section-sub-heading">Fan? Drop a note!</p>
-        <div class="section-container section-col">
-          <div class="contact-info">
-            <p><i class="ti-location-arrow"></i> Chicago, Us</p>
-            <p><i class="ti-mobile"></i> Phone: +00 151515</p>
-            <p><i class="ti-email"></i> Email: mail@mail.com</p>
-          </div>
-          <div class="contact-form">
-            <form action="submit">
-              <div class="row-2">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email">
-              </div>
-              <input type="text" placeholder="Message">
-              <div class="btn-send">Send</div>
-            </form>
+      <div id="contact" class="section">
+        <div class="section-container">
+          <h2 class="section-heading">CONTACT</h2>
+          <p class="section-sub-heading">Fan? Drop a note!</p>
+          <div class="row contact-container">
+            <div class="contact-item col col-2 contact-info">
+              <p><i class="ti-location-arrow"></i> Chicago, Us</p>
+              <p><i class="ti-mobile"></i> Phone: +00 151515</p>
+              <p><i class="ti-email"></i> Email: mail@mail.com</p>
+            </div>
+            <div class="contact-item col col-2">
+              <form class="form-contact" action="submit">
+                <div class="row">
+                  <div class="col col-2">
+                    <input type="text" placeholder="Name" class="form-input" required>
+                  </div>
+                  <div class="col col-2">
+                    <input type="text" placeholder="Email" class="form-input" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" placeholder="Message" class="form-input" required>
+                  </div>
+                </div>
+                <input class="btn send-to-btn" type="submit" value="Send">
+              </form>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div id="map"></div>
     <div id="footer">
-      <div class="content-section">
+      <div class="section">
         <div class="section-container">
           <div class="social">
             <i class="ti-instagram"></i>
@@ -156,11 +169,34 @@
             <i class="ti-github"></i>
             <i class="ti-twitter"></i>
           </div>
-          <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
+          <p class="powered-by-text">Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a></p>
         </div>
       </div>
     </div>
   </div>
+  <div class="modal js-modal">
+    <div class="modal-container js-modal-container">
+      <button class="close-btn js-close-btn"><i class="ti-close"></i></button>
+      <header class="modal-header">
+        <h2 class="modal-heading"><i class="ti-bag"></i>Tickets</h2>
+      </header>
+      <div class="modal-body">
+        <label for="" class="modal-label">
+          <ti class="ti-bag"></ti> Tickets, $15 per person
+        </label>
+        <input type="text" class="modal-input" placeholder="How many?">
+        <label for="" class="modal-label">
+          <ti class="ti-user"></ti> Send To
+        </label>
+        <input type="text" class="modal-input" placeholder="Enter email">
+        <button class="pay-btn">Pay<i class="ti-check"></i></button>
+      </div>
+      <div class="modal-footer">
+        <p class="help-text">Need <a href="">help?</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
