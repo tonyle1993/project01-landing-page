@@ -367,3 +367,117 @@ html {
 #footer .powered-by-text > a {
   color: #757575;
 }
+
+.modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  display: none;
+}
+
+.modal.open {
+  display: flex;
+}
+
+.modal-container {
+  width: 900px;
+  height: 472px;
+  max-width: 100%;
+  background-color: #fff;
+  animation: modalFadeIn ease .5s;
+}
+
+.modal .close-btn {
+  float: right;
+  padding: 16px;
+  border-style: none;
+  background-color: #009688;
+  color: #fff;
+}
+
+.modal .close-btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.modal-header {
+  background-color: #009688;
+  text-align: center;
+  padding: 32px 16px;
+  color: #fff;
+}
+
+.modal .modal-heading {
+  margin: 10px 0px;
+  font-size: 30px;
+  letter-spacing: 4px;
+}
+
+.modal .modal-heading i[class*='ti-'] {
+  margin-right: 16px;
+}
+
+.modal-body {
+  padding: 0px  16px;
+}
+
+.modal .modal-label {
+  display: block;
+  margin: 10px 0px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.modal .modal-input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.modal .pay-btn {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-style: none;
+  background-color: #009688;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.modal .pay-btn:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.modal-footer {
+  padding: 16px;
+}
+
+.modal .help-text {
+  font-size: 15px;
+  float: right;
+}
+
+@keyframes modalFadeIn {
+  from {
+    transform: translateY(-300px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

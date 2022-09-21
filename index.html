@@ -99,7 +99,7 @@
                 <h3 class="place-location">New York</h3>
                 <p class="place-date">Fri 27 Nov 2016</p>
                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <button class="btn">Buy Tickets</button>
+                <button class="btn js-buy-btn">Buy Tickets</button>
               </div>
             </div>
             <div class="col col-3">
@@ -108,7 +108,7 @@
                 <h3 class="place-location">Paris</h3>
                 <p class="place-date">Sat 28 Nov 2016</p>
                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                <button class="btn">Buy Tickets</button>
+                <button class="btn js-buy-btn">Buy Tickets</button>
               </div>
             </div>
             <div class="col col-3">
@@ -117,7 +117,7 @@
                 <h3 class="place-location">San Francisco</h3>
                 <p class="place-date">Sun 29 Nov 2016</p>
                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
-                <button class="btn" onclick="alert('Buy ticket')">Buy Tickets</button>
+                <button class="btn js-buy-btn">Buy Tickets</button>
               </div>
             </div>
           </div>
@@ -171,6 +171,29 @@
       </div>
     </div>
   </div>
+  <div class="modal js-modal">
+    <div class="modal-container">
+      <button class="close-btn js-close-btn"><i class="ti-close"></i></button>
+      <header class="modal-header">
+        <h2 class="modal-heading"><i class="ti-bag"></i>Tickets</h2>
+      </header>
+      <div class="modal-body">
+        <label for="" class="modal-label">
+          <ti class="ti-bag"></ti> Tickets, $15 per person
+        </label>
+        <input type="text" class="modal-input" placeholder="How many?">
+        <label for="" class="modal-label">
+          <ti class="ti-user"></ti> Send To
+        </label>
+        <input type="text" class="modal-input" placeholder="Enter email">
+        <button class="pay-btn">Pay<i class="ti-check"></i></button>
+      </div>
+      <div class="modal-footer">
+        <p class="help-text">Need <a href="">help?</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
