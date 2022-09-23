@@ -4,7 +4,10 @@
 
 /* MOBILE */
 @media only screen and (max-width: 739px) {
-  /* overflow: hidden; */
+  .s-col-full {
+    width: 100%;
+  }
+
   #header {
     overflow: hidden;
     position: fixed;
@@ -67,18 +70,9 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  #content .member-item {
-    width: 100%;
-  }
-
   #content .member-avatar {
     width: 229px;
     height: 229px;
-  }
-
-  #content .place-item {
-    width: 100%;
-    margin: 8px 0px;
   }
 
   #content .contact-item {

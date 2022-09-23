@@ -44,6 +44,10 @@ html {
   color: #fff !important;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 .row {
   margin-left: -8px;
   margin-right: -8px;
@@ -59,7 +63,6 @@ html {
   float: left;
   padding-left: 8px;
   padding-right: 8px;
-  width: 100%;
 }
 
 .col-2 {
@@ -68,6 +71,18 @@ html {
 
 .col-3 {
   width: 33.33333%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
 }
 
 .btn {
@@ -181,7 +196,7 @@ html {
   background-color: #333;
   margin-top: 46px;
   padding-top: 50%;
-  background: url(/assets/img/chicago.jpg) top center /cover no-repeat;
+  background: url(../img/chicago.jpg) top center /cover no-repeat;
   position: relative;
 }
 
@@ -238,7 +253,7 @@ html {
 }
 
 #content .member-list {
-  padding: 32px;
+  padding: 32px 0;
   font-size: 15px;
   margin: auto;
 }
@@ -255,7 +270,7 @@ html {
   margin: auto;
   width: 153px;
   height: 153px;
-  background: url(/assets/img/bandmember.jpg) top center / cover no-repeat;
+  background: url(../img/bandmember.jpg) top center / cover no-repeat;
   border-radius: 5px;
 }
 
@@ -292,7 +307,7 @@ html {
 }
 
 #content .place-list {
-  padding: 32px 0px;
+  padding: 16px 0px 32px;
   font-size: 15px;
 }
 
@@ -355,7 +370,7 @@ html {
 #map {
   width: 100%;
   padding-top: 50%;
-  background: url(/assets/img/map.jpg) top center / cover no-repeat;
+  background: url(../img/map.jpg) top center / cover no-repeat;
 }
 
 #footer {
